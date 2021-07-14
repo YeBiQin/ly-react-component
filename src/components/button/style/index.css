@@ -1,0 +1,38 @@
+:root {
+    --color_gray_100: #f4f4f5;
+    --color_gray_200: #d3d4d6;
+    --color_gray_300: #909399;
+    --color_brand_100: #ecf5ff;
+    --color_brand_200: #b3d8ff;
+    --color_brand_300: #409eff;
+}
+
+.ly-btn {
+    cursor: pointer;
+    outline: none;
+    display: inline-flex;
+    transition: all .15s ease-out;
+    align-items: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--color_gray_200);
+    background-color: transparent;
+}
+
+.ly-btn[disabled] {
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+.ly-btn-default {
+    height: 36px;
+    padding-left: 21px;
+    padding-right: 21px;
+    border-radius: 5px;
+}
+
+.ly-btn-default:hover {
+    color: var(--color_brand_300);
+    border-color: var(--color_brand_200);
+    background-color: var(--color_brand_100);
+}
