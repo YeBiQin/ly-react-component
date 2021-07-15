@@ -2,7 +2,15 @@ import "./style/index.css";
 import React from "react";
 import setClassNames from "classnames";
 import { getPrefixCls } from "../../utils/context";
-import { LY_BUTTON_SIZE } from "@/utils/constant.js";
+import { LY_BUTTON_SIZE, LY_BUTTON_TYPE } from "@/utils/constant.js";
+
+function getButtonType(type, decorate) {
+  const hasType = LY_BUTTON_TYPE.includes(type);
+  // 不存在该类型的按钮
+  if (!hasType) return false;
+  if (!decorate) return type;
+  return `${type}-${decorate}`;
+}
 
 function getSizeClassName(size) {
   return !!LY_BUTTON_SIZE.includes(size);
@@ -14,6 +22,7 @@ const InternalButton = (props, ref = React.createRef()) => {
     type = "default",
     size = "medium",
     loading = false,
+    decorate,
     disabled = false,
     htmlType = "button",
     children,
@@ -28,19 +37,21 @@ const InternalButton = (props, ref = React.createRef()) => {
     onClick?.(e);
   };
 
+  const tempType = getButtonType(type, decorate);
+  console.log('tempType: ', tempType);
   const prefixCls = getPrefixCls("btn", customizePrefixCls);
-  const classes = setClassNames(
+  const customizeClasss = setClassNames(
     prefixCls,
     {
-      [`${prefixCls}-${type}`]: type,
       [`${prefixCls}-loading`]: loading,
       [`${prefixCls}-${size}`]: getSizeClassName(size),
+      [`${prefixCls}-${tempType}`]: tempType,
     },
     className
   );
 
   // 加载图标
-  const LoadingIcon = <span>加载中</span>;
+  const LoadingIcon = <span>⚪ </span>;
 
   return (
     <button
@@ -48,7 +59,7 @@ const InternalButton = (props, ref = React.createRef()) => {
       type={htmlType}
       onClick={handleClick}
       disabled={loading}
-      className={classes}
+      className={customizeClasss}
     >
       {loading && LoadingIcon}
       {children}
