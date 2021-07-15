@@ -1,13 +1,18 @@
+import "./style/index.css";
 import React from "react";
 import setClassNames from "classnames";
 import { getPrefixCls } from "../../utils/context";
-import "./style/index.css";
+import { LY_BUTTON_SIZE } from "@/utils/constant.js";
+
+function getSizeClassName(size) {
+  return !!LY_BUTTON_SIZE.includes(size);
+}
 
 const InternalButton = (props, ref = React.createRef()) => {
   const {
     icon,
     type = "default",
-    size = "default",
+    size = "medium",
     loading = false,
     disabled = false,
     htmlType = "button",
@@ -29,6 +34,7 @@ const InternalButton = (props, ref = React.createRef()) => {
     {
       [`${prefixCls}-${type}`]: type,
       [`${prefixCls}-loading`]: loading,
+      [`${prefixCls}-${size}`]: getSizeClassName(size),
     },
     className
   );

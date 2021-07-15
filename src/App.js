@@ -15,7 +15,10 @@ function App() {
 
   return (
     <div className="App">
-      <Button className="test_btn" onClick={handleClick} loading={loading}>测试按钮</Button>
+      <Button type="default" size="mini">测试按钮</Button>
+      <Button type="danger" size="small">测试按钮</Button>
+      <Button type="primary" size="medium">测试按钮</Button>
+      <Button type="warning" size="large" onClick={handleClick} loading={loading}>测试按钮</Button>
     </div>
   )
 }

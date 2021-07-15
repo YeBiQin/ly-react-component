@@ -16,23 +16,40 @@
     border-width: 1px;
     border-style: solid;
     border-color: var(--color_gray_200);
+    border-radius: 5px;
     background-color: transparent;
 }
 
 .ly-btn[disabled] {
-    pointer-events: none;
     cursor: not-allowed;
+    pointer-events: none;
 }
 
-.ly-btn-default {
-    height: 36px;
+/* .ly-btn-default {
     padding-left: 21px;
     padding-right: 21px;
-    border-radius: 5px;
-}
+} */
 
 .ly-btn-default:hover {
     color: var(--color_brand_300);
     border-color: var(--color_brand_200);
     background-color: var(--color_brand_100);
+}
+
+/* 按钮大小 */
+
+.ly-btn-mini {
+    height: 24px;
+}
+
+.ly-btn-small {
+    height: 30px;
+}
+
+.ly-btn-medium {
+    height: 36px;
+}
+
+.ly-btn-large {
+    height: 40px;
 }
