@@ -1,5 +1,6 @@
 @import "./theme.css";
 .ly-btn {
+    color: var(--color_gray_600);
     cursor: pointer;
     padding: 0px;
     outline: none;
@@ -8,9 +9,9 @@
     align-items: center;
     border-width: 1px;
     border-style: solid;
-    border-color: var(--color_gray_200);
+    border-color: var(--color_gray_600);
     border-radius: 5px;
-    background-color: transparent;
+    background-color: white;
 }
 
 .ly-btn[disabled] {
@@ -19,119 +20,122 @@
     pointer-events: none;
 }
 
+.ly-btn:not([disabled]):hover {
+    box-shadow: var(--box_shadow)
+}
 
 /* 正常样式 */
+
 .ly-btn-danger:hover {
-    color: var(--color_red_300);
-    border-color: var(--color_red_200);
+    color: var(--color_red_600);
+    border-color: var(--color_red_600);
 }
 
 .ly-btn-success:hover {
-    color: var(--color_green_300);
-    border-color: var(--color_green_200);
+    color: var(--color_green_600);
+    border-color: var(--color_green_600);
 }
 
 .ly-btn-primary:hover {
-    color: var(--color_brand_300);
-    border-color: var(--color_brand_200);
+    color: var(--color_brand_600);
+    border-color: var(--color_brand_600);
 }
 
 .ly-btn-warning:hover {
-    color: var(--color_orange_300);
-    border-color: var(--color_orange_200);
+    color: var(--color_orange_600);
+    border-color: var(--color_orange_600);
 }
 
 /* 朴素样式 */
+
 .ly-btn-danger-plain {
-    color: var(--color_red_300);
-    border-color: var(--color_red_200);
-    background-color: var(--color_red_100);
+    color: var(--color_red_600);
+    border-color: var(--color_red_300);
+    background-color: var(--color_red_200);
 }
 
 .ly-btn-success-plain {
-    color: var(--color_green_300);
-    border-color: var(--color_green_200);
-    background-color: var(--color_green_100);
+    color: var(--color_green_600);
+    border-color: var(--color_green_300);
+    background-color: var(--color_green_200);
 }
 
 .ly-btn-primary-plain {
-    color: var(--color_brand_300);
-    border-color: var(--color_brand_200);
-    background-color: var(--color_brand_100);
+    color: var(--color_brand_600);
+    border-color: var(--color_brand_300);
+    background-color: var(--color_brand_200);
 }
 
 .ly-btn-warning-plain {
-    color: var(--color_orange_300);
-    border-color: var(--color_orange_200);
-    background-color: var(--color_orange_100);
+    color: var(--color_orange_600);
+    border-color: var(--color_orange_300);
+    background-color: var(--color_orange_200);
 }
 
-
-
 .ly-btn-danger-plain:hover {
-    background-color: var(--color_red_250);
+    background-color: var(--color_red_100);
 }
 
 .ly-btn-success-plain:hover {
-    background-color: var(--color_green_250);
+    background-color: var(--color_green_100);
 }
 
 .ly-btn-primary-plain:hover {
-    background-color: var(--color_brand_250);
+    background-color: var(--color_brand_100);
 }
 
 .ly-btn-warning-plain:hover {
-    background-color: var(--color_orange_250);
+    background-color: var(--color_orange_100);
 }
 
 /* 充盈样式 */
+
 .ly-btn-danger-full {
     color: white;
-    border-color: var(--color_red_400);
-    background-color: var(--color_red_400);
+    border-color: var(--color_red_600);
+    background-color: var(--color_red_600);
 }
 
 .ly-btn-success-full {
     color: white;
-    border-color: var(--color_green_400);
-    background-color: var(--color_green_400);
+    border-color: var(--color_green_600);
+    background-color: var(--color_green_600);
 }
 
 .ly-btn-primary-full {
     color: white;
-    border-color: var(--color_brand_400);
-    background-color: var(--color_brand_400);
+    border-color: var(--color_brand_600);
+    background-color: var(--color_brand_600);
 }
 
 .ly-btn-warning-full {
     color: white;
-    border-color: var(--color_orange_400);
-    background-color: var(--color_orange_400);
+    border-color: var(--color_orange_600);
+    background-color: var(--color_orange_600);
 }
 
 .ly-btn-danger-full:hover {
-    border-color: var(--color_red_300);
-    background-color: var(--color_red_300);
+    border-color: var(--color_red_500);
+    background-color: var(--color_red_500);
 }
 
-.ly-btn-success-full:hover  {
-    border-color: var(--color_green_300);
-    background-color: var(--color_green_300);
+.ly-btn-success-full:hover {
+    border-color: var(--color_green_500);
+    background-color: var(--color_green_500);
 }
 
-.ly-btn-primary-full:hover  {
-    border-color: var(--color_brand_300);
-    background-color: var(--color_brand_300);
+.ly-btn-primary-full:hover {
+    border-color: var(--color_brand_500);
+    background-color: var(--color_brand_500);
 }
 
-.ly-btn-warning-full:hover  {
-    border-color: var(--color_orange_300);
-    background-color: var(--color_orange_300);
+.ly-btn-warning-full:hover {
+    border-color: var(--color_orange_500);
+    background-color: var(--color_orange_500);
 }
-
-
 
 /* 按钮大小 */
+
 .ly-btn-mini {
     height: 27px;
     padding-left: 6px;
@@ -158,8 +162,9 @@
 
 hr {
     border-style: none;
-    border-top: 1px solid var(--color_gray_100);
+    border-top: 1px solid var(--color_gray_200);
 }
+
 Button:not(:last-child) {
     margin-right: 15px;
 }

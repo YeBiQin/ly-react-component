@@ -38,7 +38,6 @@ const InternalButton = (props, ref = React.createRef()) => {
   };
 
   const tempType = getButtonType(type, decorate);
-  console.log('tempType: ', tempType);
   const prefixCls = getPrefixCls("btn", customizePrefixCls);
   const customizeClasss = setClassNames(
     prefixCls,
@@ -51,7 +50,7 @@ const InternalButton = (props, ref = React.createRef()) => {
   );
 
   // 加载图标
-  const LoadingIcon = <span>⚪ </span>;
+  const LoadingIcon = <span>加载图标... </span>;
 
   return (
     <button

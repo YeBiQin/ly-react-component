@@ -1,37 +1,70 @@
 :root {
+    /* 品牌色 */
+    --color_brand_100: #f4faff;
+    --color_brand_200: #d9f0ff;
+    --color_brand_300: #ADDCFF;
+    --color_brand_400: #85C6FF;
+    --color_brand_500: #5BACFC;
+    --color_brand_600: #3089F0;
+    --color_brand_700: #1E68C9;
+    --color_brand_800: #104BA3;
+    --color_brand_900: #06327D;
+    --color_brand_1000: #031F57;
     /* 红色 */
-    --color_red_100: #fef0f0;
-    --color_red_200: #fbc4c4;
-    --color_red_250: rgb(255, 250, 250);
-    --color_red_300: #f56c6c;
-    --color_red_400: #e24646;
-
+    --color_red_100: #fff9f9;
+    --color_red_200: #fef0f0;
+    --color_red_300: #F6CECE;
+    --color_red_400: #F5A9A9;
+    --color_red_500: #ff7676;
+    --color_red_600: #FA5858;
+    --color_red_700: #FE2E2E;
+    --color_red_800: #FF0000;
+    --color_red_900: #DF0101;
+    --color_red_1000: #B40404;
     /* 绿色 */
-    --color_green_100: #f0f9eb;
-    --color_green_200: #c2e7b0;
-    --color_green_250: #f9fff7;
-    --color_green_300: #57b827;
-    --color_green_400: #3fa50d;
-
+    --color_green_100: #f5fffd;
+    --color_green_200: #e1fffa;
+    --color_green_300: #67fce3;
+    --color_green_400: #4cf5d9;
+    --color_green_500: #36ebcd;
+    --color_green_600: #1AE0BF;
+    --color_green_700: #17ccae;
+    --color_green_800: #13af95;
+    --color_green_900: #0c9e86;
+    --color_green_1000: #098672;
     /* 蓝色 */
-    --color_brand_100: #ecf5ff;
-    --color_brand_200: #b3d8ff;
-    --color_brand_250: #f7fbff;
-    --color_brand_300: #409eff;
-    --color_brand_400: #2383e2;
-
-    /* 灰色 */
-    --color_gray_100: #f4f4f5;
-    --color_gray_200: #d3d4d6;
-    --color_gray_250: rgb(229, 231, 235);
-    --color_gray_300: #909399;
-    --color_gray_400: #636468;
-
+    --color_blue_100: #F0F9FF;
+    --color_blue_200: #D6EFFF;
+    --color_blue_300: #ADDCFF;
+    --color_blue_400: #85C6FF;
+    --color_blue_500: #66b3ff;
+    --color_blue_600: #3089F0;
+    --color_blue_700: #1E68C9;
+    --color_blue_800: #104BA3;
+    --color_blue_900: #06327D;
+    --color_blue_1000: #031F57;
     /* 橙色 */
-    --color_orange_100: #fdf6ec;
-    --color_orange_200: #f5dab1;
-    --color_orange_250: rgb(255, 253, 248);
-    --color_orange_300: #e6a23c;
-    --color_orange_400: #ce8415;
-
+    --color_orange_100: #fffefb;
+    --color_orange_200: #fffaea;
+    --color_orange_300: #F5ECCE;
+    --color_orange_400: #F3E2A9;
+    --color_orange_500: #fad96e;
+    --color_orange_600: #f8d152;
+    --color_orange_700: #FACC2E;
+    --color_orange_800: #FFBF00;
+    --color_orange_900: #DBA901;
+    --color_orange_1000: #B18904;
+    /* 灰色 */
+    --color_gray_100: #FAFBFC;
+    --color_gray_200: #D7DEE5;
+    --color_gray_300: #C8D0D9;
+    --color_gray_400: #B0B7BF;
+    --color_gray_500: #7E858C;
+    --color_gray_600: #4C5259;
+    --color_gray_700: #0F1A26;
+    --color_gray_800: #0F1A26;
+    --color_gray_900: #0F1A26;
+    --color_gray_1000: #0F1A26;
+    /* 阴影 */
+    --box_shadow: 0 2.5px 10px 0 rgba(0, 0, 0, 0.11);
 }
