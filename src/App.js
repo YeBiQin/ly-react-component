@@ -10,9 +10,12 @@ function App() {
   const [loading5, setLoading5] = useState(false);
   const [loading6, setLoading6] = useState(false);
 
+
+
   const handleClick1 = (e) => {
     setLoading1(true);
     setTimeout(() => {
+      document.body.setAttribute("data-theme", "dark");
       setLoading1(false);
     }, 2000)
   }
@@ -27,6 +30,7 @@ function App() {
   const handleClick3 = (e) => {
     setLoading3(true);
     setTimeout(() => {
+      document.body.setAttribute("data-theme", "light");
       setLoading3(false);
     }, 2000)
   }
@@ -64,9 +68,9 @@ function App() {
       <Button decorate="plain" type="warning" size="small">测试按钮</Button>
       <Button decorate="plain" type="primary" size="mini">测试按钮</Button>
       <hr />
-      <Button decorate="full" type="success" size="large" onClick={handleClick1} loading={loading1}>测试按钮</Button>
+      <Button decorate="full" type="success" size="large" onClick={handleClick1} loading={loading1}>切换深色背景</Button>
       <Button decorate="full" type="danger" size="medium" onClick={handleClick2} loading={loading2}>测试按钮</Button>
-      <Button decorate="full" type="warning" size="small" onClick={handleClick3} loading={loading3}>测试按钮</Button>
+      <Button decorate="full" type="warning" size="small" onClick={handleClick3} loading={loading3}>切换浅色背景</Button>
       <Button decorate="full" type="primary" size="mini" onClick={handleClick4} loading={loading4}>测试按钮</Button>
     </div>
   )

@@ -1,6 +1,6 @@
 @import "./theme.css";
 .ly-btn {
-    color: var(--color_gray_600);
+    color: var(--color_neutral_900);
     cursor: pointer;
     padding: 0px;
     outline: none;
@@ -9,9 +9,9 @@
     align-items: center;
     border-width: 1px;
     border-style: solid;
-    border-color: var(--color_gray_600);
+    border-color: var(--color_neutral_500);
     border-radius: 5px;
-    background-color: white;
+    background-color: var(--color_neutral_100);
 }
 
 .ly-btn[disabled] {
@@ -91,25 +91,25 @@
 /* 充盈样式 */
 
 .ly-btn-danger-full {
-    color: white;
+    color: var(--color_neutral_100);
     border-color: var(--color_red_600);
     background-color: var(--color_red_600);
 }
 
 .ly-btn-success-full {
-    color: white;
+    color: var(--color_neutral_100);
     border-color: var(--color_green_600);
     background-color: var(--color_green_600);
 }
 
 .ly-btn-primary-full {
-    color: white;
+    color: var(--color_neutral_100);
     border-color: var(--color_brand_600);
     background-color: var(--color_brand_600);
 }
 
 .ly-btn-warning-full {
-    color: white;
+    color: var(--color_neutral_100);
     border-color: var(--color_orange_600);
     background-color: var(--color_orange_600);
 }
@@ -160,9 +160,21 @@
     padding-right: 21px;
 }
 
+/* =============================== */
+
 hr {
     border-style: none;
-    border-top: 1px solid var(--color_gray_200);
+    border-top: 1px solid var(--color_neutral_200);
+}
+
+body {
+    margin: 0px;
+    height: 100vh;
+    padding: 15px;
+}
+
+body[data-theme="dark"] {
+    background-color: var(--color_neutral_100);
 }
 
 Button:not(:last-child) {
