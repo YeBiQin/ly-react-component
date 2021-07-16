@@ -33,16 +33,16 @@
     --color_green_900: #00474F;
     --color_green_1000: #002329;
     /* 蓝色 */
-    --color_blue_100: #f4fbff;
-    --color_blue_200: #e3f4ff;
-    --color_blue_300: #ADDCFF;
-    --color_blue_400: #85C6FF;
-    --color_blue_500: #66b3ff;
-    --color_blue_600: #3089F0;
-    --color_blue_700: #1E68C9;
-    --color_blue_800: #104BA3;
-    --color_blue_900: #06327D;
-    --color_blue_1000: #031F57;
+    --color_brand_100: #f4faff;
+    --color_brand_200: #d9f0ff;
+    --color_brand_300: #91D5FF;
+    --color_brand_400: #69C0FF;
+    --color_brand_500: #5BACFC;
+    --color_brand_600: #3089F0;
+    --color_brand_700: #096DD9;
+    --color_brand_800: #0050B3;
+    --color_brand_900: #003A8C;
+    --color_brand_1000: #002766;
     /* 橙色 */
     --color_orange_100: #FFFEFB;
     --color_orange_200: #FFF8EA;
@@ -55,16 +55,16 @@
     --color_orange_900: #873800;
     --color_orange_1000: #612500;
     /* 灰色 */
-    --color_gray_100: #FAFBFC;
-    --color_gray_200: #D7DEE5;
-    --color_gray_300: #C8D0D9;
-    --color_gray_400: #B0B7BF;
-    --color_gray_500: #7E858C;
-    --color_gray_600: #4C5259;
-    --color_gray_700: #0F1A26;
-    --color_gray_800: #0F1A26;
-    --color_gray_900: #0F1A26;
-    --color_gray_1000: #0F1A26;
+    --color_Neutral_100: #FFFFFF;
+    --color_Neutral_200: #FAFAFA;
+    --color_Neutral_300: #F5F5F5;
+    --color_Neutral_400: #F0F0F0;
+    --color_Neutral_500: #D9D9D9;
+    --color_Neutral_600: #BFBFBF;
+    --color_Neutral_700: #8C8C8C;
+    --color_Neutral_800: #595959;
+    --color_Neutral_900: #262626;
+    --color_Neutral_1000: #000000;
     /* 阴影 */
     --box_shadow: 0 2.5px 10px 0 rgba(0, 0, 0, 0.11);
 }
