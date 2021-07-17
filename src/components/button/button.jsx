@@ -3,6 +3,7 @@ import React from "react";
 import setClassNames from "classnames";
 import { getPrefixCls } from "../../utils/context";
 import { LY_BUTTON_SIZE, LY_BUTTON_TYPE } from "@/utils/constant.js";
+import LoadingIcon from "./LoadingIcon.tsx";
 
 function getButtonType(type, decorate) {
   const hasType = LY_BUTTON_TYPE.includes(type);
@@ -49,9 +50,6 @@ const InternalButton = (props, ref = React.createRef()) => {
     className
   );
 
-  // 加载图标
-  const LoadingIcon = <span>加载图标... </span>;
-
   return (
     <button
       ref={ref}
@@ -60,7 +58,7 @@ const InternalButton = (props, ref = React.createRef()) => {
       disabled={loading}
       className={customizeClasss}
     >
-      {loading && LoadingIcon}
+      {loading && <LoadingIcon existIcon={!!icon} prefixCls={prefixCls} loading={loading} />}
       {children}
     </button>
   );

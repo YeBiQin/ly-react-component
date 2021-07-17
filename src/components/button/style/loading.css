@@ -1,0 +1,19 @@
+.ly-btn-loading-icon {
+  width: 13px !important;
+  margin-right: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-animation: rotate 1.5s linear infinite;
+  animation: rotate 1.5s linear infinite;
+}
+
+@-webkit-keyframes rotate {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
