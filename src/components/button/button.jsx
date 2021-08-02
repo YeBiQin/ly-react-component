@@ -1,7 +1,7 @@
 import "./style/index.css";
 import React from "react";
 import setClassNames from "classnames";
-import { getPrefixCls } from "../../utils/context";
+import { getPrefixCls } from "@/utils/context";
 import { LY_BUTTON_SIZE, LY_BUTTON_TYPE } from "@/utils/constant.js";
 import LoadingIcon from "./LoadingIcon.tsx";
 
@@ -28,7 +28,6 @@ const InternalButton = (props, ref = React.createRef()) => {
     htmlType = "button",
     children,
     className,
-    prefixCls: customizePrefixCls,
     ...rest
   } = props;
 
@@ -39,7 +38,7 @@ const InternalButton = (props, ref = React.createRef()) => {
   };
 
   const tempType = getButtonType(type, decorate);
-  const prefixCls = getPrefixCls("btn", customizePrefixCls);
+  const prefixCls = getPrefixCls("btn");
   const customizeClasss = setClassNames(
     prefixCls,
     {
@@ -58,7 +57,13 @@ const InternalButton = (props, ref = React.createRef()) => {
       disabled={loading}
       className={customizeClasss}
     >
-      {loading && <LoadingIcon existIcon={!!icon} prefixCls={prefixCls} loading={loading} />}
+      {loading && (
+        <LoadingIcon
+          existIcon={!!icon}
+          prefixCls={prefixCls}
+          loading={loading}
+        />
+      )}
       {children}
     </button>
   );

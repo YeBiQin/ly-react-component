@@ -1,0 +1,102 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  color: #3f3f3f;
+  font-size: 1.3rem;
+  background: rgb(253, 253, 253);
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+a,
+p,
+q,
+s,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+em,
+tt,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+tr,
+th,
+td,
+del,
+div,
+big,
+dfn,
+var,
+ins,
+kbd,
+pre,
+sub,
+sup,
+abbr,
+cite,
+code,
+font,
+form,
+html,
+body,
+samp,
+span,
+table,
+tbody,
+tfoot,
+thead,
+label,
+small,
+applet,
+object,
+iframe,
+strike,
+strong,
+legend,
+address,
+acronym,
+caption,
+fieldset,
+blockquote {
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  word-break: break-all;
+}
+
+
+h1 {
+  font-size: 5.6rem;
+  line-height: 6.4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+h4 {
+  font-size: 1.6rem;
+}
+
+h5 {
+  font-size: 1.4rem;
+}
+
+h6 {
+  font-size: 1.2rem;
+}
